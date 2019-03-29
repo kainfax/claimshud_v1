@@ -14,13 +14,3 @@ elseif(CLIENT)then
         draw.SimpleText( "Time remaining: " .. s, "default", 2, ScrH() / 2, color_grey, TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER )
     end)
 end
-
----This http.post only post your server name and IP to my system. Nothing more.
----You'r free to remove the hook, however do not expect any support if removed. 
-
-hook.Add("Initialize", "Claims_Sendserverinfo", function()
-		http.Post('https://claimsservers.com/server/debug/check/check.php', {
-		port = game.GetIPAddress(),
-		hostname = GetHostName() 
-		})
-	end)
