@@ -1,5 +1,5 @@
 if(SERVER) then
-	resource.AddWorkshop("1441127647") // Remove if you're using FastDL
+	resource.AddWorkshop("1734023605") // Remove if you're using FastDL
 
 	return
 end
